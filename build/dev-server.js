@@ -14,6 +14,7 @@ const proxyMiddleware = require('http-proxy-middleware')
 const webpackConfig = process.env.NODE_ENV === 'testing'
   ? require('./webpack.prod.conf')
   : require('./webpack.dev.conf')
+const DBService = require('./DBService');
 
 
 // default port where dev server listens for incoming traffic
@@ -63,6 +64,8 @@ app.use(devMiddleware)
 app.use(hotMiddleware)
 
 app.use(bodyparser.json())
+
+DBService.init();
 
 // serve pure static assets
 const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
