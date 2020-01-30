@@ -53,28 +53,28 @@ const questions = {
       questions: [
         {
           type: "radiogroup",
-          name: "life of party",
+          name: "lifeOfParty",
           title: "I am the life of the party",
           choices: answers.plus,
           isRequired: true
         },
         {
           type: "radiogroup",
-          name: "talk at parties",
+          name: "talkAtParties",
           title: "I talk to a lot of different people at parties",
           choices: answers.plus,
           isRequired: true
         },
         {
           type: "radiogroup",
-          name: "dont talk",
+          name: "dontTalk",
           title: "I don't talk a lot",
           choices: answers.minus,
           isRequired: true
         },
         {
           type: "radiogroup",
-          name: "keep in background",
+          name: "keepInBackground",
           title: "I keep in the background",
           choices: answers.minus,
           isRequired: true
@@ -92,21 +92,21 @@ const questions = {
         },
         {
           type: "radiogroup",
-          name: "others emotions",
+          name: "othersEmos",
           title: "I feel other's emotions",
           choices: answers.plus,
           isRequired: true
         },
         {
           type: "radiogroup",
-          name: "interest in others",
+          name: "interestInOthers",
           title: "I'm not really interested in others",
           choices: answers.minus,
           isRequired: true
         },
         {
           type: "radiogroup",
-          name: "others problems",
+          name: "othersProblems",
           title: "I'm not interested in other people's problems.",
           choices: answers.minus,
           isRequired: true
@@ -131,7 +131,7 @@ const questions = {
         },
         {
           type: "radiogroup",
-          name: "forget things",
+          name: "forgetThings",
           title: "I often forget to put things back in their proper place",
           choices: answers.minus,
           isRequired: true
@@ -149,7 +149,7 @@ const questions = {
       questions: [
         {
           type: "radiogroup",
-          name: "mood swings",
+          name: "moodSwings",
           title: "I have frequent mood swings",
           choices: answers.plus,
           isRequired: true
@@ -181,28 +181,28 @@ const questions = {
       questions: [
         {
           type: "radiogroup",
-          name: "vivid imagination",
+          name: "vividImagination",
           title: "I have have a vivid imagination",
           choices: answers.plus,
           isRequired: true
         },
         {
           type: "radiogroup",
-          name: "abstract ideas understanding",
+          name: "abstractUnderstanding",
           title: "I have difficulty understanding abstract ideas",
           choices: answers.minus,
           isRequired: true
         },
         {
           type: "radiogroup",
-          name: "abstract ideas interest",
+          name: "abstractInterest",
           title: "I'm not interested in abstract ideas",
           choices: answers.minus,
           isRequired: true
         },
         {
           type: "radiogroup",
-          name: "no imagination",
+          name: "noImagination",
           title: "I do not have a good imagination",
           choices: answers.minus,
           isRequired: true
