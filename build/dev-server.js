@@ -15,6 +15,7 @@ const webpackConfig = process.env.NODE_ENV === 'testing'
   ? require('./webpack.prod.conf')
   : require('./webpack.dev.conf')
 const DBService = require('./DBService');
+const ResultRepo = require('./ResultRepo');
 
 
 // default port where dev server listens for incoming traffic
@@ -77,12 +78,18 @@ devMiddleware.waitUntilValid(function () {
   console.log('> Listening at ' + uri + '\n')
 })
 
-app.post('/', (req, res) => {
+app.post('/', async (req, res) => {
+  try {
+    const result = req.body;
+    console.log(result)
+    await ResultRepo.saveResult(result);
 
-  const result = req.body;
-  console.log(result)
+    res.json()
+  } catch (err) {
+    console.error(err.status);
 
-  res.json()
+  }
+
 })
 module.exports = app.listen(port, function (err) {
   if (err) {
