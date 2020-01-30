@@ -46,7 +46,7 @@ const answers = {
 }
 
 const questions = {
-  title: "Product Feedback Survey Example",
+  title: "Mini-IPIP Max Patch Survey",
   showProgressBar: "top",
   pages: [
     {

@@ -1,20 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/max_logo.png">
 
-    <h2>Survey Library:</h2>
     <survey :survey="survey"></survey>
 
   </div>
 </template>
 
 <script>
-import SurveyCreator from "./components/SurveyCreator";
 import * as SurveyVue from "survey-vue";
-import * as SurveyPDF from "survey-pdf";
 import * as SurveyKo from "survey-knockout";
 import "bootstrap/dist/css/bootstrap.css";
-var Survey = SurveyVue.Survey;
+
+const Survey = SurveyVue.Survey;
 Survey.cssType = "bootstrap";
 
 import * as widgets from "surveyjs-widgets";
@@ -43,8 +41,7 @@ SurveyKo.Serializer.addProperty("question", "tag:number");
 export default {
   name: "app",
   components: {
-    Survey,
-    SurveyCreator
+    Survey
   },
   data() {
     const model = new SurveyVue.Model(questions);

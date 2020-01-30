@@ -81,13 +81,13 @@ devMiddleware.waitUntilValid(function () {
 app.post('/', async (req, res) => {
   try {
     const result = req.body;
-    console.log(result)
+
     await ResultRepo.saveResult(result);
 
     res.json()
   } catch (err) {
     console.error(err.status);
-
+    res.status(500).json({message: err.message});
   }
 
 })
