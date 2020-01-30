@@ -55,25 +55,29 @@ const questions = {
           type: "radiogroup",
           name: "life of party",
           title: "I am the life of the party",
-          choices: answers.plus
+          choices: answers.plus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "talk at parties",
           title: "I talk to a lot of different people at parties",
-          choices: answers.plus
+          choices: answers.plus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "dont talk",
           title: "I don't talk a lot",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "keep in background",
           title: "I keep in the background",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         }
       ]
     },
@@ -83,25 +87,29 @@ const questions = {
           type: "radiogroup",
           name: "sympathize",
           title: "I sympathize with other's feelings",
-          choices: answers.plus
+          choices: answers.plus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "others emotions",
           title: "I feel other's emotions",
-          choices: answers.plus
+          choices: answers.plus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "interest in others",
           title: "I'm not really interested in others",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "others problems",
           title: "I'm not interested in other people's problems.",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         }
       ]
     },
@@ -111,25 +119,29 @@ const questions = {
           type: "radiogroup",
           name: "chores",
           title: "I get chores done right away",
-          choices: answers.plus
+          choices: answers.plus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "order",
           title: "I like order",
-          choices: answers.plus
+          choices: answers.plus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "forget things",
           title: "I often forget to put things back in their proper place",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "mess",
           title: "I make a mess of things",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         }
       ]
     },
@@ -139,25 +151,29 @@ const questions = {
           type: "radiogroup",
           name: "mood swings",
           title: "I have frequent mood swings",
-          choices: answers.plus
+          choices: answers.plus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "upset",
           title: "I get upset easily",
-          choices: answers.plus
+          choices: answers.plus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "relaxed",
           title: "I am relaxed most of the time",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "blue",
           title: "I seldom feel blue",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         }
       ]
     },
@@ -167,25 +183,29 @@ const questions = {
           type: "radiogroup",
           name: "vivid imagination",
           title: "I have have a vivid imagination",
-          choices: answers.plus
+          choices: answers.plus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "abstract ideas understanding",
           title: "I have difficulty understanding abstract ideas",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "abstract ideas interest",
           title: "I'm not interested in abstract ideas",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         },
         {
           type: "radiogroup",
           name: "no imagination",
           title: "I do not have a good imagination",
-          choices: answers.minus
+          choices: answers.minus,
+          isRequired: true
         }
       ]
     }
