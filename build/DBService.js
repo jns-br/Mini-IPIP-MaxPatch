@@ -13,7 +13,7 @@ class DBService {
         useFindAndModify: false
       });
 
-      mongoose.set('autoindex', true);
+      mongoose.set('autoIndex', true);
 
       Result.init();
     } catch (err) {
