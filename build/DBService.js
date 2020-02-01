@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-const DB_URL = process.env.DBCONNECTION;
+const config = require('../config');
+
+const DB_URL = config.dev.env.DB_URL;
 
 const Result = require('./ResultModel');
 
