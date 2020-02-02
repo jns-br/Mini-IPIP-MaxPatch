@@ -3,8 +3,18 @@
 ## Description
     Project to create MaxPatch based on Mini-IPIP
 
-## Run
- - npm i
+## Prerequesites
+    - Node.js
+    - MongoDB server running at default port eg. 27017
+    - Max MSP
+
+## Run Survey Web Application
+ - In terminal, go to project folder
+ - npm install (only before first run)
  - npm run dev
  - open http://localhost:8080/ in your web browser
-For detailed explanation on how VueJS things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Run Max Server and Patch
+ - Open express.maxproj with Max
+ - Before first run, click script npm install
+ - To run Max Server, click script start
