@@ -69,6 +69,14 @@ app.use(hotMiddleware);
 
 app.use(bodyparser.json());
 
+const csp = require('express-csp-header');
+app.use(csp({
+  policies: {
+    'default-src': [csp.NONE],
+    'img-src': [csp.SELF],
+  }
+}));
+
 DBService.init();
 
 // serve pure static assets
