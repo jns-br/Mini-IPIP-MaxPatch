@@ -19,8 +19,9 @@ function anypost(str) {
 app.post('/', async (req, res) => {
   try {
     anypost('request received');
-    const {alpha77, alpha70, alpha69, alpha68, alpha65} = req.body;
-    if (Max) await Max.outlet();
+    //const {extraversion, agreeableness, conscientiousness, neuroticism, imagination} = req.body;
+    const result = req.body;
+    if (Max) await Max.outlet(result);
     res.json();
   } catch (err) {
     console.error(err.message);

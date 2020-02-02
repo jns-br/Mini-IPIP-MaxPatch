@@ -1,4 +1,4 @@
-const Result = require('./ResultModel')
+const Result = require('./ResultModel');
 
 class ResultRepo {
   async saveResult (result) {
