@@ -5,6 +5,7 @@ if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
 }
 
+const csp = require('express-csp-header');
 const request = require('request-promise');
 const opn = require('opn');
 const bodyparser = require('body-parser');
@@ -69,8 +70,14 @@ app.use(hotMiddleware);
 
 app.use(bodyparser.json());
 
-
 DBService.init();
+
+app.use(csp({
+  policies: {
+    'default-src': [csp.NONE],
+    'img-src': [csp.SELF],
+  }
+}));
 
 // serve pure static assets
 const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory);
