@@ -13,13 +13,13 @@ class ResultRepo {
       await entry.save();
       return {extraversion, agreeableness, conscientiousness, neuroticism, imagination};
     } catch (err) {
-      console.error('DB Error:', err.message)
+      console.error('DB Error:', err.message);
       throw err
     }
   }
 
   getExtraversion (result) {
-    const {lifeOfParty, talkAtParties, dontTalk, keepInBackground} = result
+    const {lifeOfParty, talkAtParties, dontTalk, keepInBackground} = result;
     return {
       lifeOfParty,
       talkAtParties,
@@ -69,4 +69,4 @@ class ResultRepo {
   }
 }
 
-module.exports = new ResultRepo()
+module.exports = new ResultRepo();
